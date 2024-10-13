@@ -1,0 +1,98 @@
+.section-webnorth-featured-collection .webnorth-container {
+  background-color: #fff;
+}
+
+/* Section Header */
+.webnorth-featured-collection-header {
+  display: block;
+}
+.webnorth-featured-collection-header h2 {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.webnorth-featured-collection-header h2 a {
+  text-decoration: none;
+  color: #000;
+}
+.webnorth-featured-collection-header h2 a:hover,
+.webnorth-featured-collection-header h2 a:focus {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Collection List */
+.webnorth-featured-collection-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+.webnorth-featured-collection-item {
+  display: block;
+  pointer-events: all;
+  width: calc((100% - 51px - 51px) / 3);
+
+  will-change: opacity;
+  transition: opacity 150ms ease;
+}
+
+/* Collection Layouts */
+.webnorth-featured-collection-list--collumns-three {
+  gap: 51px;
+}
+.webnorth-featured-collection-list--collumns-three .webnorth-featured-collection-item {
+  width: calc((100% - 51px - 51px) / 3);
+  height: 460px;
+}
+.webnorth-featured-collection-list--collumns-two {
+  column-gap: 103px;
+  row-gap: 51px;
+}
+.webnorth-featured-collection-list--collumns-two .webnorth-featured-collection-item {
+  width: calc((100% - 103px) / 2);
+  height: 197px;
+}
+
+/* Collection States */
+.webnorth-featured-collection-list:hover > .webnorth-featured-collection-item,
+.webnorth-featured-collection-list:focus-within > .webnorth-featured-collection-item {
+  opacity: 0.5;
+}
+.webnorth-featured-collection-list:hover > :hover,
+.webnorth-featured-collection-list:focus-within > :focus-within {
+  opacity: 1;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1148px) {
+  .webnorth-featured-collection-list--collumns-three {
+    justify-content: center;
+  }
+  .webnorth-featured-collection-list--collumns-three .webnorth-featured-collection-item {
+    width: calc((100% - 103px) / 2);
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .webnorth-featured-collection-header {
+    text-align: center;
+  }
+  .webnorth-featured-collection-list--collumns-three,
+  .webnorth-featured-collection-list--collumns-two {
+    justify-content: center;
+  }
+  .webnorth-featured-collection-list--collumns-three .webnorth-featured-collection-item {
+    width: 100%;
+    max-width: 414px;
+  }
+  .webnorth-featured-collection-list--collumns-two .webnorth-featured-collection-item {
+    width: 100%;
+    max-width: 512px;
+  }
+}
