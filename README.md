@@ -12,14 +12,14 @@ Development Theme: **webnorth test**
 
 ---  
 
-## Development Setup
+## Development
 
 ### Shopify Partners
 
 First of all, you need to be added to my **Shopify Partners** profile.  
 To do so - please contact me and share you Shopify Partners email.
 
-### Downloading the code
+### Project Setup
 
 #### 1. Download code from the repo:
 **SSH:**
