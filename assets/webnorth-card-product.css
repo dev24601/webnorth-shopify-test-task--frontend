@@ -18,6 +18,8 @@
 }
 
 .webnorth-card-product--info {
+  width: 100%;
+  overflow: hidden;
   padding: 24px;
   background-color: #f8f8f8;
 
